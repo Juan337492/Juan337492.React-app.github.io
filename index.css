@@ -1,0 +1,8 @@
+@media (min-width: 1px){
+    .sallyImg{
+        border: blue 2px solid;
+    }
+}
+.sallyImg{
+    border: blue 2px solid;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+  <link rel="stylesheet" type="text/css" herf="style.css">
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" herf="index.css">
+<div id="application-root"></div>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script type="text/babel">
+function App(props) {
+  return (
+    <header>
+      {props.children}
+      <section>
+      <h3>Education :</h3>
+      <ul>
+      <li className="education">MIT - Bachelor's in Computer Programming </li>
+      </ul>
+      </section>
+      <br  />
+      <main>
+      <h3>Work experience :</h3>
+      <h4>Full-Stack Developer at Google</h4>
+      <p>Developed full scale web applications at Google under Senior Developer. <br /><i> July 2019 - present</i></p>
+      <h4>Full-Stack Developer at Microsoft</h4>
+      <p>Developed full scale mobile applications at Microsoft under  Senior Developer. <br /><i> Janauary 2019 - July 2019</i></p>
+      </main>
+      <br  />
+      <address>
+      <h3>Contact :</h3>
+      <p>phone : 100-100-1000</p>
+      <p>email : hi@yahoo.com</p>
+      <img src="sally/sally.jpg" className='sallyImg'></img>
+      </address>
+    </header>
+   
+
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App className='name'>
+  <h1>Sally Enderson</h1>
+  </App>,
+  document.querySelector('#application-root')
+);
+</script>
+</body>
+</html>
